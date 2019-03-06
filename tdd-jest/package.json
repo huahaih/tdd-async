@@ -2,21 +2,28 @@
   "author": "Manulife University Engineering",
   "name": "tdd-jest",
   "version": "1.0.0",
-  "description": "",
+  "description": "TDD using jest",
   "main": "index.js",
   "scripts": {
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
+    "build:watch": "npm run build -- --watch",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "jest"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
+    "babel-jest": "^24.1.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "jest": "^24.1.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel-jest": "^24.1.0"
+    "axios": "^0.18.0"
   }
 }

@@ -19,4 +19,4 @@ test('factorial of 1 is 1', () => {
 test('should factorial of 5 is 120', () => {
   let result = factorial(5);
   expect(result).toBe(120);
-})
+});

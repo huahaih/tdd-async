@@ -1,8 +1,7 @@
-import { storeDate } from '../src/4.exceptions';
+import storeDate from '../src/4.exceptions';
 
 describe('Testing exceptions', () => {
-
-  // Problem 1) create a 'storeDate' function that returns successful if the date passed to it is 
+  // Problem 1) create a 'storeDate' function that returns successful if the date passed to it is
   // in the past.  Otherwise, throw and exception if the date is in the future
 
   it('should successfully add a date in the past', () => {

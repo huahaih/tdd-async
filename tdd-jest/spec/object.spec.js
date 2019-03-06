@@ -16,5 +16,4 @@ test('get first 5 elements of array to be [1, 2, 3, 4, 5]', () => {
   let answer = [1, 2, 3, 4, 5];
 
   expect(result).toEqual(answer);
-
 });

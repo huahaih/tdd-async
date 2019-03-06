@@ -8,7 +8,7 @@ const createName = (firstName, lastName) => {
   result.firstName = firstName;
   result.lastName = lastName;
   return result;
-}
+};
 
 
-export { createName };
+export default createName;
