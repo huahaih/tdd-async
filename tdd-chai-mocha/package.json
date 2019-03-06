@@ -1,8 +1,7 @@
 {
-  "author": "Manulife University",
-  "license": "UNLICENSED",
+  "author": "Manulife University Engineering",
   "name": "tdd-chai-mocha",
-  "version": "",
+  "version": "1.0.0",
   "description": "TDD using chai and mocha",
   "main": "index.js",
   "scripts": {
