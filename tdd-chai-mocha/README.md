@@ -1,4 +1,4 @@
-# tdd-exercises
+# tdd-chai-mocha
 
 ## Prerequisites
 
