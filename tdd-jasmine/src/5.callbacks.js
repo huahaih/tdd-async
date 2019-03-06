@@ -1,6 +1,6 @@
 export default class Hello {
   static helloWithName(fullName) {
-    return `${'hello' + ' '}${fullName.firstName} ${fullName.lastName}!`;
+    return `hello ${fullName.firstName} ${fullName.lastName}!`;
   }
 
   static helloThere() {
