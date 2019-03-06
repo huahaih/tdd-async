@@ -2,17 +2,25 @@
   "author": "Manulife University Engineering",
   "name": "tdd-jasmine",
   "version": "1.0.0",
-  "description": "TDD using chai and mocha",
-  "license": "ISC",
+  "description": "TDD using jasmine",
   "main": "index.js",
   "scripts": {
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
+    "build:watch": "npm run build -- --watch",
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test1": "babel-node node_modules/jasmine/bin/jasmine",
     "test": "babel-node run.js"
   },
-  "dependencies": {
+  "license": "ISC",
+  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "jasmine": "^3.3.1",
     "jasmine-terminal-reporter": "^1.0.3"
   }

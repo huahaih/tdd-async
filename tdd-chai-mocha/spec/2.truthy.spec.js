@@ -2,7 +2,6 @@ import { expect } from 'chai';
 import { multipleOfThree, isAnInteger } from '../src/2.truthy';
 
 describe('Testing truthiness', () => {
-
   // Problem 1) write a bunch of test cases that tests whether a number is a multiple of 3
   // the function 'multipleOfThree' must check to see if the given input integer is evenly
   // divisible by 3
@@ -31,6 +30,4 @@ describe('Testing truthiness', () => {
     let result = isAnInteger('a');
     expect(result).to.be.false;
   });
-
-
 });

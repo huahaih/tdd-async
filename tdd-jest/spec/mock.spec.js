@@ -1,4 +1,4 @@
-import { forEach } from '../src/mock';
+import forEach from '../src/mock';
 
 test('mock testing', () => {
   const mockCallback = jest.fn(x => 42 + x);
@@ -18,5 +18,4 @@ test('mock testing', () => {
 
   // return value of second call to the function was 43
   expect(mockCallback.mock.results[1].value).toBe(43);
-
 });
