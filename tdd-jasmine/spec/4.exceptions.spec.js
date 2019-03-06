@@ -13,6 +13,7 @@ describe('Testing exceptions', () => {
   it('should throw an exception when adding a date 7 days in the future', () => {
     let currentDate = new Date();
     currentDate.setDate(currentDate.getDate() + 7);
+    expect(() => { storeDate(currentDate); }).toThrow();
     expect(() => { storeDate(currentDate); }).toThrowError('cannot store a date in the future');
   });
 });
