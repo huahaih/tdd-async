@@ -2,12 +2,11 @@
   "author": "Manulife University Engineering",
   "name": "tdd-jest",
   "version": "1.0.0",
-  "description": "",
+  "description": "TDD using jest",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
