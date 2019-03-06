@@ -1,4 +1,4 @@
-// Problem 1) create a 'storeDate' function that returns successful if the date passed to it is 
+// Problem 1) create a 'storeDate' function that returns successful if the date passed to it is
 // in the past.  Otherwise, throw and exception if the date is in the future
 
 const storeDate = (date) => {
@@ -7,8 +7,8 @@ const storeDate = (date) => {
   if (date <= currentDate) {
     return 'successful';
   } else {
-    throw new Error('cannot store a date in the future')
+    throw new Error('cannot store a date in the future');
   }
 };
 
-export { storeDate };
+export default storeDate;

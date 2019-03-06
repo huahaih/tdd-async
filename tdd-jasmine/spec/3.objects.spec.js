@@ -1,7 +1,6 @@
-import { createName } from '../src/3.objects';
+import createName from '../src/3.objects';
 
 describe('Testing objects, defined, nulls', () => {
-
   // Problem 1) write a test case that accepts a firstName and a lastName as parameters and returns
   // a JSON structure with those attributes
   // the function should be called 'createName'
@@ -22,6 +21,4 @@ describe('Testing objects, defined, nulls', () => {
     // this ensures the JSON structure returning doesn't contain extra attributes
     expect(result).toEqual(answer);
   });
-
-
 });

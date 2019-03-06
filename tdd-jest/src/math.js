@@ -1,7 +1,5 @@
 
-const add = (a, b) => {
-  return a + b;
-}
+const add = (a, b) => a + b;
 
 const factorial = (a) => {
   let answer = 1;
@@ -18,4 +16,4 @@ const factorial = (a) => {
 };
 
 
-export { add, factorial }
+export { add, factorial };

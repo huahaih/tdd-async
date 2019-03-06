@@ -2,9 +2,8 @@ import { expect } from 'chai';
 import { add, createArray, newbornAge, oldestHumanAge } from '../src/1.numbers';
 
 describe('Testing numbers and equalities', () => {
-
   // Problem 1) write a bunch of test cases to test an 'add' function that adds 2 numbers
-  // The 'add' function should accept 2 integers, positive and negatives 
+  // The 'add' function should accept 2 integers, positive and negatives
 
   it('should add 2 and 3 to be 5', () => {
     let result = add(2, 3);
@@ -54,8 +53,7 @@ describe('Testing numbers and equalities', () => {
   it('should check age to be greater 0 and less than 123', () => {
     let youngest = newbornAge();
     let oldest = oldestHumanAge();
-    expect(youngest).toBeGreaterThanOrEqual(0);
-    expect(oldest).toBeLessThan(123);
+    expect(youngest).to.be.above(-1);
+    expect(oldest).to.be.below(123);
   });
-
 });

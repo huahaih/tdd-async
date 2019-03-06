@@ -5,7 +5,7 @@ const createName = (first, last) => {
   result.lastName = last;
   result.isEmployed = true;
   return result;
-}
+};
 
 const createArray = (num) => {
   let array = [];
@@ -14,6 +14,6 @@ const createArray = (num) => {
   }
 
   return array;
-}
+};
 
 export { createName, createArray };

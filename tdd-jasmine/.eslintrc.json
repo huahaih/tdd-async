@@ -1,19 +1,18 @@
 {
-  "extends": [
-    "airbnb-base",
-    "prettier",
-    "prettier/react"
-  ],
-  "prettier/prettier": [
-    "error",
-    {
-      "trailingComma": "es5",
-      "singleQuote": true,
-      "printWidth": 120
-    }
-  ],
+  "extends": "airbnb-base",
   "plugins": [
-    "import",
-    "prettier"
-  ]
+    "import"
+  ],
+  "rules": {
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "no-mixed-operators": "off",
+    "no-use-before-define": "off",
+    "prefer-const": "off",
+    "no-undef": "off",
+    "no-else-return": "off",
+    "no-param-reassign": "off",
+    "no-bitwise": "off",
+    "no-restricted-globals": "off"
+  }
 }
