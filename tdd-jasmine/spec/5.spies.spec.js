@@ -1,6 +1,7 @@
-import Hello from '../src/5.callbacks';
+import Hello from '../src/5.spies';
 
 describe('Testing spying on a functions', () => {
+  // note: use beforeAll to set up your data
   let hello;
   let fullName;
 
