@@ -1,7 +1,7 @@
 const setupNewUser = (info, callback) => {
   let user = {
     name: info.name,
-    nameLowerCase: info.name.toLowerCase(),
+    status: 'active',
   };
 
   try {
@@ -13,7 +13,7 @@ const setupNewUser = (info, callback) => {
 
 class Database {
   static save(user, callback) {
-    console.log('---> initiating a database save!!');
+    console.log('---> Database: Initiating save!!');
     // do something to simulate saving to a database
     user.name = user.name;
     callback();

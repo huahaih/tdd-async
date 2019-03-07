@@ -19,7 +19,7 @@ describe('Testing spies', () => {
     let save = sinon.spy(Database, 'save');
     let expectedUser = {
       name: info.name,
-      nameLowerCase: info.name.toLowerCase(),
+      status: 'active',
     };
 
     setupNewUser(info, () => { });
