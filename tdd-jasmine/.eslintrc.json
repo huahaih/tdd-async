@@ -13,6 +13,7 @@
     "no-else-return": "off",
     "no-param-reassign": "off",
     "no-bitwise": "off",
-    "no-restricted-globals": "off"
+    "no-restricted-globals": "off",
+    "no-console": "off"
   }
 }

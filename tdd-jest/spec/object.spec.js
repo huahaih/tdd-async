@@ -3,8 +3,8 @@ import { createName, createArray } from '../src/object';
 
 test('create a json object with firstName of John and lastName of Smith', () => {
   let result = createName('John', 'Smith');
-  expect(result.firstName).toBeDefined;
-  expect(result.lastName).toBeDefined;
+  expect(result.firstName).toBeDefined();
+  expect(result.lastName).toBeDefined();
   expect(result.isEmployed).toBe(true);
   expect(result.firstName).toBe('John');
   expect(result.lastName).toEqual('Smith');

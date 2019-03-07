@@ -2,8 +2,8 @@ import Jasmine from 'jasmine';
 import Reporter from 'jasmine-terminal-reporter';
 
 let options = {
-  'isVerbose': true,
-  'includeStackTrace': true,
+  isVerbose: true,
+  includeStackTrace: true,
 };
 
 const jasmine = new Jasmine();
