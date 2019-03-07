@@ -1,7 +1,8 @@
 import Hello from '../src/5.spies';
 
+// Note: A spy is a good choice whenever the goal of a test is to verify something happened.
+
 describe('Testing spying on a functions', () => {
-  // note: use beforeAll to set up your data
   let hello;
   let fullName;
 

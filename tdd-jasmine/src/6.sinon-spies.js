@@ -13,7 +13,8 @@ const setupNewUser = (info, callback) => {
 
 class Database {
   static save(user, callback) {
-    // do something
+    console.log('---> initiating a database save!!');
+    // do something to simulate saving to a database
     user.name = user.name;
     callback();
   }
