@@ -1,13 +1,14 @@
 import Jasmine from 'jasmine';
-import Reporter from 'jasmine-terminal-reporter';
-
-let options = {
-  isVerbose: true,
-  includeStackTrace: true,
-};
+import JasmineConsoleReporter from 'jasmine-console-reporter';
 
 const jasmine = new Jasmine();
-const reporter = new Reporter(options);
+const reporter = new JasmineConsoleReporter({
+  colors: 1,
+  cleanStack: 3,
+  verbosity: 4,
+  listStyle: 'indent',
+  activity: false,
+});
 
 jasmine.loadConfigFile('spec/support/jasmine.json');
 jasmine.addReporter(reporter);
