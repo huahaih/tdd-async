@@ -28,4 +28,6 @@ const oldestHumanAge = () => 122;
 
 // export all your functions here
 
-export { add, createArray, newbornAge, oldestHumanAge };
+export {
+  add, createArray, newbornAge, oldestHumanAge,
+};
