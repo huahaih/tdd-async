@@ -9,7 +9,7 @@ const factorial = (a) => {
       answer *= i;
     }
   } else {
-    answer = 0;
+    answer = 1;
   }
 
   return answer;
