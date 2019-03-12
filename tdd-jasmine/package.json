@@ -10,9 +10,9 @@
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test1": "babel-node node_modules/jasmine/bin/jasmine",
     "test": "babel-node run.js",
-    "testing": "jest --config=jest.config.json -i --detectOpenHandles"
+    "test:clean": "babel-node node_modules/jasmine/bin/jasmine",
+    "test:report": "jest --config=jest.config.json -i --detectOpenHandles"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -24,7 +24,8 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
     "jest-cli": "^24.3.1",
-    "jest-html-reporter": "^2.5.0"
+    "jest-html-reporter": "^2.5.0",
+    "sinon": "^7.2.7"
   },
   "dependencies": {
     "@types/jasmine": "^3.3.9",
@@ -32,7 +33,6 @@
     "@types/mocha": "^5.2.6",
     "jasmine": "^3.3.1",
     "jasmine-console-reporter": "^3.1.0",
-    "jasmine-node": "^2.0.1",
-    "sinon": "^7.2.7"
+    "jasmine-node": "^2.0.1"
   }
 }

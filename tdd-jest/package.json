@@ -10,7 +10,7 @@
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:report": "jest --coverage"
   },
   "license": "ISC",
   "devDependencies": {
@@ -22,7 +22,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "sinon": "^7.2.7"
   },
   "dependencies": {
     "axios": "^0.18.0"
