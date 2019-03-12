@@ -9,8 +9,8 @@
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha spec/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha spec/**/*.spec.js --require babel-register --watch"
+    "test": "./node_modules/.bin/mocha tests/**/*.test.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.test.js --require babel-register --watch"
   },
   "keywords": [
     "js",
@@ -22,11 +22,13 @@
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "chai": "3.5.0",
-    "eslint": "^4.0.0",
+    "chai-spies": "^1.0.0",
+    "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
     "husky": "^0.11.9",
-    "mocha": "3.2.0"
+    "mocha": "^6.0.2",
+    "sinon": "^7.2.7"
   }
 }

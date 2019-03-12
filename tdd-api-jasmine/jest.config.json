@@ -1,7 +1,7 @@
 {
   "verbose": true,
   "testEnvironment": "node",
-  "testRegex": "(/spec/.*\\.(test|spec))\\.(ts?|js?)$",
+  "testRegex": "(/tests/.*\\.(test|spec))\\.(ts?|js?)$",
   "moduleFileExtensions": [
     "ts",
     "tsx",

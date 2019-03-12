@@ -10,6 +10,6 @@ const reporter = new JasmineConsoleReporter({
   activity: false,
 });
 
-jasmine.loadConfigFile('spec/support/jasmine.json');
+jasmine.loadConfigFile('tests/support/jasmine.json');
 jasmine.addReporter(reporter);
 jasmine.execute();

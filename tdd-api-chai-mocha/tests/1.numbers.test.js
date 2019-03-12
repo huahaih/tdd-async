@@ -8,6 +8,7 @@ describe('Testing numbers and equalities', () => {
   it('should add 2 and 3 to be 5', () => {
     let result = add(2, 3);
     expect(result).to.equal(5);
+    expect(result).to.not.equal(6);
   });
 
   it('should add 11 and 52 to be 63', () => {
