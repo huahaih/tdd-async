@@ -12,6 +12,8 @@
     "no-undef": "off",
     "no-else-return": "off",
     "no-param-reassign": "off",
-    "no-bitwise": "off"
+    "no-bitwise": "off",
+    "no-restricted-globals": "off",
+    "no-console": "off"
   }
 }
