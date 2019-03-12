@@ -10,9 +10,9 @@
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test1": "babel-node node_modules/jasmine/bin/jasmine",
     "test": "babel-node run.js",
-    "testing": "jest --config=jest.config.json -i --detectOpenHandles"
+    "test:clean": "babel-node node_modules/jasmine/bin/jasmine",
+    "test:report": "jest --config=jest.config.json -i --detectOpenHandles"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
