@@ -20,3 +20,8 @@ test('should factorial of 5 is 120', () => {
   let result = factorial(5);
   expect(result).toBe(120);
 });
+
+test('should factorial of 1 for 1', () => {
+  let result = factorial(0);
+  expect(result).toBe(1);
+});

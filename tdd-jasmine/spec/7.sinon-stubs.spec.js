@@ -1,5 +1,5 @@
 import sinon from 'sinon';
-import { setupNewUser, Database } from '../src/6.sinon-spies';
+import { setupNewUser, Database } from '../src/6.sinon-spies-stubs-mocks';
 
 // Note: A few common uses for stubs
 // - You can use them to replace problematic pieces of code
