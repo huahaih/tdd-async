@@ -1,5 +1,5 @@
 import sinon from 'sinon';
-import { setupNewUser, Database } from '../src/6.sinon-spies';
+import { setupNewUser, Database } from '../src/6.sinon-spies-stubs-mocks';
 
 
 describe('Testing spies', () => {
