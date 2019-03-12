@@ -22,7 +22,6 @@ describe('Testing spying on a functions', () => {
     expect(result).toEqual('hello there!');
   });
 
-
   // Problem 2) write a test case to spy on the helloWithName function
   //    Note: The helloWithName function should not be called!
   // Part 2) write a test case to call helloWithName to actually return a value
