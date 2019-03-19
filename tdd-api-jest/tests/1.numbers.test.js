@@ -5,6 +5,7 @@ import {
 describe('Testing numbers and equalities', () => {
   // Problem 1) write a bunch of test cases to test an 'add' function that adds 2 numbers
   // The 'add' function should accept 2 integers, positive and negatives
+  // Use the 'not' key word to negate the comparison
 
   it('should add 2 and 3 to be 5', () => {
     let result = add(2, 3);

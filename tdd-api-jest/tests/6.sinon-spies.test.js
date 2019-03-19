@@ -9,7 +9,13 @@ describe('Testing spies', () => {
     info = { name: 'test' };
   });
 
-  // Problem 1) write a test case to spy on a save function
+  // Problem 1) write a test case to spy on the Database.save function
+  // Create a new function called 'setupNewUser' that calls the Database.save function
+  // the setupNewUser function accepts 2 parameters
+  //  1 - info
+  //  2 - empty function eg. () => {}
+  // use sinon.spy to spy on the function first, then use sinon.assert to check the function
+  // was called once
 
   it('should call save once', () => {
     let save = sinon.spy(Database, 'save');
