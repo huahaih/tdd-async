@@ -1,4 +1,5 @@
 const setupNewUser = (info, callback) => {
+  console.log('--> setupNewUser: function called <--');
   let user = {
     name: info.name,
     status: 'active',
