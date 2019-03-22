@@ -1,0 +1,36 @@
+{
+  "verbose": true,
+  "testEnvironment": "node",
+  "testRegex": "(/tests/.*\\.(test|spec))\\.(ts?|js?)$",
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "json",
+    "jsx"
+  ],
+  "reporters": [
+    "default",
+    [
+      "./node_modules/jest-html-reporter",
+      {
+        "pageTitle": "TDD Jasmine - All Testing",
+        "includeFailureMsg": true,
+        "includeConsoleLog": true,
+        "theme": "lightTheme",
+        "logo": "https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/7b/5a/32/7b5a3229-9484-0610-78a9-0cbbdab05653/source/512x512bb.jpg",
+        "outputPath": "tdd-jasmine-report.html"
+      }
+    ]
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": -1
+    }
+  },
+  "collectCoverage": true,
+  "coverageDirectory": "coverage"
+}
