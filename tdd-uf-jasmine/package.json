@@ -15,24 +15,24 @@
     "test:report": "jest --config=jest.config.json -i --detectOpenHandles"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "eslint": "^5.15.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "jest-cli": "^24.3.1",
-    "jest-html-reporter": "^2.5.0",
-    "sinon": "^7.2.7"
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/node": "latest",
+    "@babel/preset-env": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "jest-cli": "latest",
+    "jest-html-reporter": "latest",
+    "sinon": "latest"
   },
   "dependencies": {
-    "@types/jasmine": "^3.3.9",
-    "@types/jest": "^24.0.11",
-    "@types/mocha": "^5.2.6",
-    "jasmine": "^3.3.1",
-    "jasmine-console-reporter": "^3.1.0",
-    "jasmine-node": "^2.0.1"
+    "@types/jasmine": "latest",
+    "@types/jest": "latest",
+    "@types/mocha": "latest",
+    "jasmine": "latest",
+    "jasmine-console-reporter": "latest",
+    "jasmine-node": "latest"
   }
 }
