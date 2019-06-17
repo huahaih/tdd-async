@@ -1,5 +1,5 @@
 import sinon from 'sinon';
-import { setupNewUser, Database } from '../src/6.sinon-spies-stubs-mocks';
+import { createNewTransaction, GeneralBank } from '../src/6.sinon-spies-stubs-mocks';
 
 // Spies offer information about a function without affecting their behaviour
 
@@ -9,33 +9,33 @@ describe('Testing spies', () => {
     info = { name: 'test' };
   });
 
-  // Problem 1) write a test case to spy on the Database.save function
-  // Create a new function called 'setupNewUser' that calls the Database.save function
-  // the setupNewUser function accepts 2 parameters
+  // Problem 1) write a test case to spy on the GeneralBank.debit function
+  // Create a new function called 'createNewTransaction' that calls the GeneralBank.debit function
+  // the createNewTransaction function accepts 2 parameters
   //  1 - info
   //  2 - empty function eg. () => {}
   // use sinon.spy to spy on the function first, then use sinon.assert to check the function
   // was called once
 
-  it('should call save once', () => {
-    let save = sinon.spy(Database, 'save');
-    setupNewUser(info, () => { });
-    save.restore();
-    sinon.assert.calledOnce(save);
+  it('should call debit once', () => {
+    let debit = sinon.spy(GeneralBank, 'debit');
+    createNewTransaction(info, () => { });
+    debit.restore();
+    sinon.assert.calledOnce(debit);
   });
 
 
-  // Problem 2) write a test case to spy on a save function, passing in the correct parameters
+  // Problem 2) write a test case to spy on a debit function, passing in the correct parameters
 
-  it('should pass object with correct values to save', () => {
-    let save = sinon.spy(Database, 'save');
+  it('should pass object with correct values to debit', () => {
+    let debit = sinon.spy(GeneralBank, 'debit');
     let expectedUser = {
       name: info.name,
-      status: 'active',
+      accountType: 'chequing',
     };
 
-    setupNewUser(info, () => { });
-    save.restore();
-    sinon.assert.calledWith(save, expectedUser);
+    createNewTransaction(info, () => { });
+    debit.restore();
+    sinon.assert.calledWith(debit, expectedUser);
   });
 });
