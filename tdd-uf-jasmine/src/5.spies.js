@@ -1,11 +1,12 @@
 export default class Hello {
-  static helloWithName(fullName) {
-    console.log('--> helloWithName called <--');
-    return `hello ${fullName.firstName} ${fullName.lastName}!`;
+  static getFullNameString(fullName) {
+    console.log('--> getFullNameString called <--');
+    return `${fullName.firstName} ${fullName.lastName}`;
   }
 
-  static helloThere() {
+  static helloThere(fullName) {
+    const fullNameString = this.getFullNameString(fullName);
     console.log('--> helloThere called!! <--');
-    return 'hello there!';
+    return `hello there (${fullNameString})!`;
   }
 }
