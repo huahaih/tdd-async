@@ -13,6 +13,10 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
+    login(validUser).then((result) => {
+      expect(result).toEqual('Successful');
+    });
+
     return expect(login(validUser)).resolves.toBe('Successful');
   });
 
