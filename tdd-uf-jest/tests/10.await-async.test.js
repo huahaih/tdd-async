@@ -8,7 +8,13 @@ describe('Testing JavaScript Promises with Async/Await', () => {
 
     // Act
 
-    // Assert
+
+    /* Assert -- TRADITION STYLE
+    let result = await login(validUser);
+    expect(result).toEqual('Successful');
+    */
+
+    // Assert - NEW STYLE
     await expect(login(validUser)).resolves.toBe('Successful');
   });
 
@@ -19,7 +25,8 @@ describe('Testing JavaScript Promises with Async/Await', () => {
 
     // Act
 
+
     // Assert
-    await expect(login(invalidUser)).rejects.toMatch('User Not Found');
+    await expect(login(invalidUser)).rejects.toBe('User Not Found');
   });
 });

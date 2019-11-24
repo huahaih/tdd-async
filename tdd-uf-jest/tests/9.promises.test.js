@@ -24,6 +24,6 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
-    return expect(login(invalidUser)).rejects.toMatch('User Not Found');
+    return expect(login(invalidUser)).rejects.toBe('User Not Found');
   });
 });
