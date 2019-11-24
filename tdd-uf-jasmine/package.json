@@ -28,6 +28,7 @@
     "sinon": "latest"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.7.0",
     "@types/jasmine": "latest",
     "@types/jest": "latest",
     "@types/mocha": "latest",
