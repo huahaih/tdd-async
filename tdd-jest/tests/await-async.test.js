@@ -1,4 +1,4 @@
-import { login } from '../src/7.async';
+import { search } from '../src/async';
 // Async/Await
 describe('Testing JavaScript Promises with Async/Await', () => {
   // Problem 1) write a positive test case by using async/await to call login() method with valid username
@@ -8,14 +8,8 @@ describe('Testing JavaScript Promises with Async/Await', () => {
 
     // Act
 
-
-    /* Assert -- TRADITION STYLE
-    let result = await login(validUser);
-    expect(result).toEqual('Successful');
-    */
-
     // Assert - NEW STYLE
-    await expect(login(validUser)).resolves.toBe('Successful');
+    await expect(search(validUser)).resolves.toBe('Successful');
   });
 
   // Problem 2) write a nagitive test case by using async/await to call login() method with invalid username
@@ -27,6 +21,6 @@ describe('Testing JavaScript Promises with Async/Await', () => {
 
 
     // Assert
-    await expect(login(invalidUser)).rejects.toBe('User Not Found');
+    await expect(search(invalidUser)).rejects.toBe('User Not Found');
   });
 });

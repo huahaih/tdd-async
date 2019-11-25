@@ -1,4 +1,4 @@
-import { login } from '../src/7.async';
+import { search } from '../src/async';
 
 describe('Testing JavaScript Promises', () => {
   //  Async in JavaScript has 3 forms: callback, promise and await/async
@@ -13,11 +13,7 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
-    login(validUser).then((result) => {
-      expect(result).toEqual('Successful');
-    });
-
-    return expect(login(validUser)).resolves.toBe('Successful');
+    return expect(search(validUser)).resolves.toBe('Successful');
   });
 
   // Problem 2) write a nagitive test case to call login() method with invalid username
@@ -28,6 +24,6 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
-    return expect(login(invalidUser)).rejects.toBe('User Not Found');
+    return expect(search(invalidUser)).rejects.toBe('User Not Found');
   });
 });
