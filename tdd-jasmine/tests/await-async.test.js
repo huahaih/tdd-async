@@ -1,4 +1,4 @@
-import { login } from '../src/async';
+import { search } from '../src/async';
 // Async/Await
 describe('Testing JavaScript Promises with Async/Await', () => {
   // Problem 1) write a positive test case by using async/await to call login() method with valid username
@@ -7,13 +7,13 @@ describe('Testing JavaScript Promises with Async/Await', () => {
     let validUser = 'John Smith';
 
     // Act
-    let result = await login(validUser);
+    let result = await search(validUser);
 
     // Assert
     expect(result).toEqual('Successful');
 
     // Assert Alternate
-    await expectAsync(login(validUser)).toBeResolved('Successful');
+    await expectAsync(search(validUser)).toBeResolved('Successful');
   });
 
   // Problem 2) write a nagitive test case by using async/await to call login() method with invalid username
@@ -24,6 +24,6 @@ describe('Testing JavaScript Promises with Async/Await', () => {
     // Act
 
     // Assert
-    await expectAsync(login(invalidUser)).toBeRejectedWith('User Not Found');
+    await expectAsync(search(invalidUser)).toBeRejectedWith('User Not Found');
   });
 });

@@ -1,4 +1,4 @@
-import { login } from '../src/async';
+import { search } from '../src/async';
 
 describe('Testing JavaScript Promises', () => {
   //  Async in JavaScript has 3 forms: callback, promise and await/async
@@ -13,7 +13,7 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
-    login(validUser).then((result) => {
+    search(validUser).then((result) => {
       expect(result).toEqual('Successful');
     });
 
@@ -27,7 +27,7 @@ describe('Testing JavaScript Promises', () => {
     // Act
 
     // Assert
-    login(invalidUser).then((result) => {
+    search(invalidUser).then((result) => {
       expect(result).toEqual('User Not Found');
     });
   });
