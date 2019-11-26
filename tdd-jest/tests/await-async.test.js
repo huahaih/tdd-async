@@ -1,4 +1,5 @@
-import search from '../src/async';
+
+
 // Async/Await
 describe('Testing JavaScript Promises with Async/Await', () => {
 

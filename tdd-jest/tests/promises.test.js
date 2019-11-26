@@ -1,4 +1,4 @@
-import search from '../src/async';
+
 
 describe('Testing JavaScript Promises', () => {
 
