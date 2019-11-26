@@ -1,34 +1,20 @@
-import search from '../src/async';
+
 
 describe('Testing JavaScript Promises', () => {
-  //  Async in JavaScript has 3 forms: callback, promise and await/async
 
   // Promises
   // NOTE: keyword return DOES matter, it won't execute if return is missing
-  // Problem 1) write a positive test case to call login() method with valid usernam
-  it('should resolve if user is in system', () => {
-    // Arrange
-    let validUser = 'John Smith';
 
-    // Act
 
-    // Assert
-    search(validUser).then((result) => {
-      expect(result).toEqual('Successful');
-    });
+  // Problem 1) write a positive test case by using async/await to call search() method with valid user name
 
-  });
 
-  // Problem 2) write a nagitive test case to call login() method with invalid username
-  it('should reject if user is not in system', () => {
-    // Arrange
-    let invalidUser = 'Joe Anderson';
 
-    // Act
 
-    // Assert
-    search(invalidUser).then((result) => {
-      expect(result).toEqual('User Not Found');
-    });
-  });
+  // Problem 2) write a nagative test case by using async/await to call search() method with invalid user name
+
+
+
+
+
 });
