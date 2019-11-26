@@ -1,4 +1,4 @@
-import { search } from '../src/async';
+import search from '../src/async';
 
 describe('Testing JavaScript Promises', () => {
   //  Async in JavaScript has 3 forms: callback, promise and await/async

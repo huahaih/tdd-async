@@ -1,4 +1,4 @@
-export const search = (user) => {
+const search = (user) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (user === 'John Smith') {
@@ -8,3 +8,5 @@ export const search = (user) => {
     }, 100);
   });
 };
+
+export default search;
