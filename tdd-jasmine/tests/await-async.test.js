@@ -1,4 +1,4 @@
-import { search } from '../src/async';
+import search from '../src/async';
 // Async/Await
 describe('Testing JavaScript Promises with Async/Await', () => {
   // Problem 1) write a positive test case by using async/await to call login() method with valid username
